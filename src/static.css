@@ -1,0 +1,122 @@
+:root {
+    /* COLOR PALETTE */
+
+    
+    --very-dark-grey: hsl(0deg, 0%, 10%);
+    --purple: hsl(295.6deg, 44.2%, 69.8%);
+    --apple-green: hsl(115.6deg, 44.2%, 69.8%);
+    --light-apple-green: hsl(114.7deg, 43.6%, 84.7%);
+    --medium-grey: hsl(0deg, 0%, 40%);
+    --light-grey: hsl(0deg, 0%, 60%);
+    --white: hsl(0deg, 0%, 100%);
+
+    /* TYPOGRAPHY */
+    /* Base font-size of 18px */
+    --base-font-size: 1.125em;
+
+    --small: 1rem;
+    --medium: 1.25rem;
+    --large: 1.5rem;
+    --very-large: 2rem;
+
+    /* RADIUS */
+    --radius-S : 5px;
+
+    /* SPACING */
+    --base-space: 8px;
+    --space-XS: 16px;
+    --space-S: 24px;
+    --space-M: 32px;
+    --space-L: 48px;
+    --space-XL: 64px;
+    --space-XXL: 96px;
+    --space-XXXL: 128px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html, body, .page-container, .streched-container {
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--base-font-size);
+}
+
+body {
+    background-color: var(--apple-green);
+}
+.page-container {
+    width: 100%;
+}
+
+.to-do-list-container {
+    min-height: 100%;
+    margin-inline: calc(var(--space-XXXL) * 2);
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-block-start: auto; /*allows footer to be at the bottom */
+}
+
+.stretched-header {
+    margin-inline: calc(var(--space-XXXL) * -2);
+    background-color: var(--purple);
+
+}
+
+h1 {
+    text-align: center;
+    color: var(--white);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    color: var(--very-dark-grey);
+    border-radius: var(--radius-S);
+    background-color: whitesmoke;
+    border: 1px solid var(--light-grey);
+    padding: var(--space-S) var(--space-M);
+    margin-block: var(--base-space);
+}
+
+li.list-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stretched-footer {
+    background-color: var(--purple);
+    margin-inline: calc(var(--space-XXXL) * -2);
+}
+
+.footer-buttons-container {
+    margin-inline: calc(var(--space-XXXL) * 2); /* reset inherited footer's negative margin */
+    padding: var(--space-S) var(--space-M);
+}
+
+a.button {
+    text-decoration: none;
+    color: var(--very-dark-grey);
+    border-radius: var(--radius-S);
+    background-color: whitesmoke;
+    padding: var(--base-space) var(--space-M);
+}
+
