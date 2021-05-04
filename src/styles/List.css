@@ -1,0 +1,32 @@
+ul {
+    padding: 0;
+    margin: 0;
+    margin-block-start: var(--base-space);
+}
+
+li.list-group {
+    list-style-type: none;
+    color: var(--very-dark-grey);
+    border: 1px dashed var(--medium-blue);
+    border-bottom: none;
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--base-space) * 0.75) calc(var(--base-space) * 1.25);
+}
+
+li.list-group:last-child {
+    border-radius: 0 0 var(--radius-S) var(--radius-S);
+    border-bottom: 1px dashed var(--medium-blue);
+}
+
+li .button-checked {
+    background-color: var(--whitesmoke);
+    border: 1px solid var(--dark-apple-green);
+    width: 48px;
+    height: 48px;
+}
+
+li .button-checked img {
+    width: 100%;
+    margin: auto;
+}

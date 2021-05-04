@@ -1,0 +1,10 @@
+.stretched-header {
+    margin-inline: calc(var(--base-space) * -1);
+    background-color: var(--peach);
+}
+
+h1 {
+    text-align: center;
+    color: var(--white);
+}
+
