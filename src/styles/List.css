@@ -11,6 +11,7 @@ li.list-group {
     border-bottom: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: calc(var(--base-space) * 0.75) calc(var(--base-space) * 1.25);
 }
 

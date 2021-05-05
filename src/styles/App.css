@@ -90,10 +90,10 @@ body {
 
 
 @media only screen and (min-width: 768px) {
-    .to-do-list-container {
+    .to-do-list-container, .footer-buttons-container {
         margin-inline: calc(var(--space-XL) * 2);
     }
-
+    base-
     .stretched-header {
         margin-inline: calc(var(--space-XL) * -2);
     }
@@ -101,14 +101,10 @@ body {
     .stretched-footer {
         margin-inline: calc(var(--space-XL) * -2);
     }
-
-    a.button {
-    padding: calc(var(--base-space) / 2) var(--space-S);
-    }
 }
 
 @media only screen and (min-width: 1024px) {
-    .to-do-list-container {
+    .to-do-list-container, .footer-buttons-container {
         margin-inline: calc(var(--space-XXL) * 2);
     }
 
@@ -122,7 +118,7 @@ body {
 }
 
 @media only screen and (min-width: 1200px) {
-    .to-do-list-container {
+    .to-do-list-container, .footer-buttons-container {
         margin-inline: calc(var(--space-XXXL) * 2);
     }
 
@@ -136,7 +132,7 @@ body {
 }
 
 @media only screen and (min-width: 1400px) {
-    .to-do-list-container {
+    .to-do-list-container, .footer-buttons-container {
         margin-inline: calc(var(--space-XXXL) * 3);
     }
 
