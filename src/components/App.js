@@ -1,26 +1,26 @@
 import React from 'react'
 import Banner from './Banner'
-import List from './List'
+import ToDoList from './ToDoList'
 import FooterActions from './FooterActions'
 import '../styles/App.css'
 
 
-function App () {
-    return [
+const App = () => (
+    <> {/* React.Fragment */}
         <div className="page-container">
-        <div className="streched-container">
-            <div className="to-do-list-container">
+            <div className="streched-container">
+                <div className="to-do-list-container">
 
-                <Banner />
+                    <Banner />
 
-                <List />
+                    <ToDoList />
 
-                <FooterActions />
+                    <FooterActions />
 
-            </div>
-        </div> 
-    </div>
-    ]
-}
+                </div>
+            </div> 
+        </div>
+    </>
+)
 
 export default App;

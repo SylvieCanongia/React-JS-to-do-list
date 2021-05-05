@@ -1,10 +1,9 @@
 import React from 'react'
-import '../styles/List.css'
+import '../styles/ToDoList.css'
 import iconChecked from "../assets/images/iconChecked.png"
 
-function List () {
-    return [
-
+const ToDoList = () => (
+    <>
         <main>
             <ul>
                 <li className="list-group">
@@ -21,7 +20,7 @@ function List () {
                 </li>
             </ul> 
         </main>
-    ]
-}
+    </>
+)
 
-export default List;
+export default ToDoList;
