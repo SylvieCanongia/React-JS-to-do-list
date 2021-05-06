@@ -1,26 +1,44 @@
 import React from 'react'
+import ToDo from './ToDo'
 import '../styles/ToDoList.css'
-import iconChecked from "../assets/images/iconChecked.png"
 
-const ToDoList = () => (
-    <>
-        <main>
-            <ul>
-                <li className="list-group">
-                    Trouver un super job de développeuse
-                    <button className="button button-checked"><img src={iconChecked} alt="Icon checked" /></button>
-                </li>
-                <li className="list-group">
-                    Ranger ma chambre
-                    <button className=" button button-checked"><img src={iconChecked} alt="Icon checked" /></button>
-                </li>
-                <li className="list-group">
-                    Faire des câlins aux chats
-                    <button className="button button-checked"><img src={iconChecked} alt="Icon checked" /></button>
-                </li>
-            </ul> 
-        </main>
-    </>
-)
+// access to properties tasks and match
+const ToDoList = ({tasks, match}) => {
+    let filteredTasks;
+
+    // see when the filter = 'completed' or 'undefined'
+    switch (match.params.filter) {
+        case 'completed':
+            filteredTasks = tasks.filter(task => task.completed)
+        break;
+        default:
+            filteredTasks = tasks
+    }
+
+    // is filteredTasks empty ?
+    if(filteredTasks.length === 0) {
+        return (
+            <>
+                <main>
+                    <ul>
+                        <li className="list-group">Aucune tâche à afficher</li>
+                    </ul> 
+                </main>
+            </>
+        )
+    } else {
+        return (
+            <>
+                <main>
+                    <ul>
+                        {
+                            filteredTasks.map((task) => <ToDo task={task} key={task.id}/>)
+                        }
+                    </ul> 
+                </main>
+            </>
+        )
+    }
+}
 
 export default ToDoList;

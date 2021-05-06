@@ -22,7 +22,7 @@ li.list-group:last-child {
 
 li .button-checked {
     background-color: var(--whitesmoke);
-    border: 1px solid var(--dark-apple-green);
+    border: 1px solid var(--blue-duck);
     width: 48px;
     height: 48px;
 }

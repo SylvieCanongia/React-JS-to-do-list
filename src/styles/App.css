@@ -86,6 +86,7 @@ body {
 .button {
     text-decoration: none;
     border-radius: var(--radius-S);
+    cursor: pointer;
 }
 
 
