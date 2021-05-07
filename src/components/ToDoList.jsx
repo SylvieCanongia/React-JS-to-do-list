@@ -3,8 +3,8 @@ import ToDo from './ToDo'
 import '../styles/ToDoList.css'
 
 // access to properties tasks and match
-const ToDoList = ({tasks, match}) => {
-    let filteredTasks;
+const ToDoList = ({tasks, match, onToggleCompleted}) => {
+    let filteredTasks
 
     // see when the filter = 'completed' or 'undefined'
     switch (match.params.filter) {
@@ -32,7 +32,7 @@ const ToDoList = ({tasks, match}) => {
                 <main>
                     <ul>
                         {
-                            filteredTasks.map((task) => <ToDo taskData={task} key={task.id}/>)
+                            filteredTasks.map((task) => <ToDo task={task} key={task.id} onToggleCompleted={onToggleCompleted}/>)
                         }
                     </ul> 
                 </main>
