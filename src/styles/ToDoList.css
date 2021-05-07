@@ -20,6 +20,35 @@ li.list-group:last-child {
     border-bottom: 1px dashed var(--medium-blue);
 }
 
+button.button {
+    position: relative;
+    transition: background-color .6s ease;
+    overflow: hidden;
+}
+
+button.button::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: var(--transparent-white);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+}
+
+button.button:hover {
+    background: var(--light-blue);
+}
+
+button.button:active::after {
+    width: 200px;
+    height: 200px;
+}
+
 li .button-checked {
     border: 1px solid var(--blue-duck);
     width: var(--space-L);

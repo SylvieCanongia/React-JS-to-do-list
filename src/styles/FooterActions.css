@@ -35,9 +35,7 @@ a.button {
 svg.react-icons {
     width: var(--medium);
     height: var(--medium);
-
 }
-
 
 a.button::after {
     content: "";
