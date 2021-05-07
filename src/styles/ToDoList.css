@@ -21,13 +21,22 @@ li.list-group:last-child {
 }
 
 li .button-checked {
-    background-color: var(--whitesmoke);
     border: 1px solid var(--blue-duck);
-    width: 48px;
-    height: 48px;
+    width: var(--space-L);
+    height: var(--space-L);
 }
 
-li .button-checked img {
+li svg {
+    width: var(--large);
+    height: var(--large);
+}
+
+.success {
+    background-color: var(--light-blue);
+}
+
+.success-checked {
+    background-color: var(--light-blue);
+    color: var(--dark-apple-green);
     width: 100%;
-    margin: auto;
 }

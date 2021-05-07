@@ -8,6 +8,7 @@
     --peach: hsl(10deg, 97%, 67%);
     --medium-peach: hsl(10.1deg, 96.7%, 57%);
     --dark-peach: hsl(10.1deg, 96.7%, 48%);
+    --light-blue: hsl(189.9deg, 96.4%, 85%);
     --blue:	hsl(189.9deg, 96.4%, 55%);
     --medium-blue: hsl(190.1deg,96.7%,45%);
     --blue-duck: hsl(190.2deg,96.4%,32.4%);
@@ -83,10 +84,11 @@ body {
     flex-direction: column;
 }
 
-.button {
+button {
     text-decoration: none;
     border-radius: var(--radius-S);
     cursor: pointer;
+    background-color: var(--whitesmoke);
 }
 
 

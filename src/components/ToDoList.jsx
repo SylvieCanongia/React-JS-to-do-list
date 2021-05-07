@@ -32,7 +32,7 @@ const ToDoList = ({tasks, match}) => {
                 <main>
                     <ul>
                         {
-                            filteredTasks.map((task) => <ToDo task={task} key={task.id}/>)
+                            filteredTasks.map((task) => <ToDo taskData={task} key={task.id}/>)
                         }
                     </ul> 
                 </main>
