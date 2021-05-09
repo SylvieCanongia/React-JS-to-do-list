@@ -6,6 +6,7 @@ import ToDoList from './ToDoList'
 import FooterActions from './FooterActions'
 import AddTask from './AddTask'
 import '../styles/App.css'
+import uniqueid from 'uniqueid'
 
 
 class App extends React.Component {
@@ -28,6 +29,19 @@ class App extends React.Component {
         ))
     }
 
+    // create new task
+    onAddTask = (newTaskName) => {
+        let newTask = {
+            id: uniqueid(),
+            name: newTaskName,
+            completed: false
+        }
+
+        this.setState(prevState => ({
+            tasks: [...prevState.tasks, newTask]
+        }))
+    }
+
     render() {
         return (
             <>
@@ -37,9 +51,8 @@ class App extends React.Component {
                             <Router>
                                 <Banner />
                                 <Switch>
-                                    <Route path="/add-task">
-                                        <AddTask />
-                                    </Route>
+                                    <Route path="/add-task" render={(props) => <AddTask {...props} onAddTask={this.onAddTask} />} />
+                                        
                                     {/* property onToggleCompleted is passed to the component ToDoList*/}
                                     <Route path="/:filter?" render={(props) => <ToDoList {...props} tasks={this.state.tasks} onToggleCompleted={this.onToggleCompleted} />} />
                                 </Switch>
