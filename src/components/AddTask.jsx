@@ -6,6 +6,7 @@ class AddTask extends React.Component {
     handleSubmit = (e) => {
         e.preventDefault()
         this.props.onAddTask(this.newTask.value);
+        this.props.history.push('/')
     }
 
     render() {
