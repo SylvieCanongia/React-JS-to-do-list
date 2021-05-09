@@ -42,6 +42,15 @@ class App extends React.Component {
         }))
     }
 
+    onDeleteCompleted = () => {
+        this.setState(prevState => {
+            let newState = prevState.tasks.filter(task => !task.completed)
+            return {
+                tasks: newState
+            }
+        })
+    }
+
     render() {
         return (
             <>
@@ -56,7 +65,7 @@ class App extends React.Component {
                                     {/* property onToggleCompleted is passed to the component ToDoList*/}
                                     <Route path="/:filter?" render={(props) => <ToDoList {...props} tasks={this.state.tasks} onToggleCompleted={this.onToggleCompleted} />} />
                                 </Switch>
-                                <FooterActions />
+                                <FooterActions onDeleteCompleted={this.onDeleteCompleted} />
                             </Router>
                         </div>
                     </div>
