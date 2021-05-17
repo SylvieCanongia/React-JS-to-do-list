@@ -8,7 +8,7 @@ It also allows me to improve my mastery of all the concepts seen in the awesome 
 
 Je viens de finir une formation à React JS et cette to-do list me permet de commencer à m'amuser avec React.
 
-Elle me permet également d'améliorer ma maîtrise de toutes les notions vues dans la formation géniale ['CSS for JavaScript developers'](https://css-for-js.dev/) de Josh Comeau.
+Elle me permet également d'améliorer ma maîtrise de certaines notions vues dans la formation géniale ['CSS for JavaScript developers'](https://css-for-js.dev/) de Josh Comeau.
 
 📫 Vous pouvez me joindre au **06 50 70 60 08** ou par mail : **sylvie.canongia.dev@gmail.com**.
 
@@ -32,3 +32,8 @@ A bientôt !
 <img align = "left" alt = "css" width = "60px" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align = "left" alt = "react-js" width = "60px" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 <img align = "left" alt = "react-js" width = "60px" src = "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
+
+## Rendu final
+
+![Alt](to-do-list-1.jpg "Capture d'écran de ma page d'accueil")
+![Alt](to-do-list-2.jpg "Capture d'écran de ma page 'Ajouter une tâche'")
