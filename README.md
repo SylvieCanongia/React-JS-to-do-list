@@ -35,5 +35,6 @@ A bientôt !
 
 ## Rendu final
 
-![Alt](to-do-list-1.jpg "Capture d'écran de ma page d'accueil")
-![Alt](to-do-list-2.jpg "Capture d'écran de ma page 'Ajouter une tâche'")
+![Alt](to-do-list-1.jpg "Page d'accueil")
+![Alt](to-do-list-2.jpg "Page 'Ajouter une tâche'")
+![Alt](to-do-list-3.jpg "Mise à jour liste suite à ajout d'une tâche")
